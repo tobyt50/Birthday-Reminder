@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4caf50;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.navbar {
+    background: #95d884;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background: none;
+    border: none;
+    font-family: cursive;
+    text-align: center;
+}
+
+.navbar a:hover {
+    color: #4caf50;
+    text-shadow: 0 0 10px rgba(126, 124, 124, 0.1);
+    transition: 250ms;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+form div {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 400px;
+}
+
+form label {
+    font-family: cursive;
+    color: #45a049;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fafde6;
+}
+
+form input[type="text"]:hover,
+form input[type="date"]:hover {
+    border: 1px solid #ccc;
+}
+
+form input::placeholder {
+    opacity: 0.5;
+}
+
+form button {
+    padding: 10px;
+    background-color: #95d884;
+    color: white;
+    font-family: cursive;
+    border: none;
+    border-radius: 10px;
+    width: 20%;
+    max-width: 200px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    color: #4caf50;
+    font-family: cursive;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fafde6;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: cursive;
+    color: #45a049;
+}
+
+.birthday-list {
+    background-color: #fafde6;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: cursive;
+    color: #45a049;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    form label {
+        margin-left: 0;
+    }
+
+    form input[type="text"],
+    form input[type="date"] {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="date"] {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px;
+    }
+}
